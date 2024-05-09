@@ -4,7 +4,7 @@ import "dotenv/config";
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get("/jokes", (req, res) => {
+app.get("/api/jokes", (req, res) => {
   const jokesList = [
     { id: 1, title: "first Joke", body: "This is my first joke" },
     { id: 2, title: "second Joke", body: "This is my second joke" },
